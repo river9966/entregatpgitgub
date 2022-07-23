@@ -1,0 +1,618 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    
+
+}
+
+
+.nav{
+    display: flex;
+    
+    
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+.header{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 120px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.header__menu{
+   
+    
+}
+
+.header__nav{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    font-size: 25px;
+    gap: 4rem;
+}
+
+.header__logo{
+    width: 250px;
+    height: 100px;
+    display: flex;
+    
+}
+
+.header__acceder{
+    display: flex;
+    font-size: 23px;
+    padding-right: 70px;
+    align-items: center;
+    
+    
+}
+
+.usuario{
+    
+    font-size: 23px;
+    
+    
+}
+
+.acceder__imagen{
+    width: 80px;
+    height: 80px;
+    border-radius: 3rem;
+    
+}
+
+
+.main{
+    color: white;
+    width: 100%;
+    height: 2200px;
+    background-color: rgb(34, 34, 34);
+}
+
+.presentacion{
+    width: 100%;
+    padding-top: 120px;
+}
+
+
+.imagen__presentacion{
+    width: 100%;
+    height: 550px;
+    
+}
+
+.seccion__contacto{
+    width: 100%;
+    
+    max-width: 1300px;
+    padding: 2rem;
+    margin: auto;
+    
+}
+
+.contacto{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+.seccion__whatsapp{
+    
+    justify-items: center;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:50px ;
+    grid-template-areas: 
+    "icono titulo"
+    "numero numero";
+}
+
+.whatsapp__icono{
+    
+    align-items: center;
+    display: grid;
+    font-size: 40px;
+    grid-area: icono;
+    margin-left: 115px;
+}
+
+.titulo__whatsapp{
+    align-items: center;
+    display: grid;
+    grid-area: titulo;
+    margin-right: 45px;
+}
+
+.span{
+    margin-left: 70px;
+    grid-area: numero;
+    text-align: center;
+}
+
+/* seccion 2 */
+.seccion2{
+    display: grid;
+    width: 100%;
+    height: 350px;
+    justify-content: center;
+    
+}
+
+.seccion__gamer{
+    width: 100%;
+    gap: 3rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    
+}
+
+.gamer{
+    position: relative;
+    
+}
+
+.gamer__img{
+    width: 100%;
+    width:300px;
+    height: 320px;
+    display: flex;
+    border-radius: 5px;
+}
+
+.titulo__gamer{
+    background-color: rgb(36, 36, 160);
+    position: absolute;
+    top: 18.5rem;
+    left: 0;
+    
+}
+
+/* ........Productos Destacados......... */
+.titulo__productos--destacados{
+    display: grid;
+    align-items:flex-start;
+    
+    
+}
+.productos__destacados{
+    display: grid;
+    
+    width: 100%;
+    height: 1000px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.destacados{
+    max-width: 1500px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    
+}
+
+.seccion__destacado{
+    display: grid;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: white;
+    border-radius: 8px;
+    
+}
+
+.img__destacado{
+    width: 250px;
+    height: 250px;
+    
+}
+
+.titulo__destacado{
+    color: gray;
+    background-color: white;
+    text-align: center;
+}
+
+.footer__oferta{
+    background-color:gray;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    gap: 4px;
+}
+
+.icono__footer{
+    font-size: 30px;
+}
+.footer__suscribirse{
+    font-size: 17px;
+}
+
+.footer__final{
+    background-color: rgb(114, 106, 106);
+    height: 300px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__informacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 250px;
+    width: 1200px;
+    
+    
+}
+
+/* .................... paginaProductos.......... */
+.productos__main{
+    width: 100%;
+    background-color: black;
+}
+
+.productos__seccion{
+    display: grid;
+    height: auto;
+    justify-content: center;
+    
+}
+
+.productos__asus{
+    display: grid;
+    width: 900px;
+    height:auto;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "img1 img1"
+    "img2 img3"
+    "img4 img4"
+    "img5 img6";
+    
+}
+
+.productos__asus1{
+    grid-area: img1;
+    width: 100%;
+}
+.productos__asus2{
+    grid-area: img2;
+}
+.productos__asus3{
+    grid-area: img3;
+}
+.productos__asus4{
+    grid-area: img4;
+    width: 100%;
+}
+.productos__asus5{
+    grid-area: img5;
+}
+.productos__asus6{
+    grid-area: img6;
+}
+
+.main__gaming{
+    padding-top: 200px;
+}
+
+.footer__gaming{
+    padding-top: 150px;
+}
+
+.registrarse__main{
+    padding-top:120px;
+    height: 600px;
+    background-color: rgb(58, 57, 57);
+}
+
+.form__registro{
+    display: grid;
+    
+    height: 300px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.registro__datos{
+
+}
+
+.boton__registro{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+   
+}
+/*.......... version tablet......... */
+@media screen and (max-width:1023px){
+    .header__logo{
+        width: 70px;
+        height: 70px;
+        
+    }
+
+    .header__menu{
+        font-size: 15px;
+        
+    }
+
+    .header{
+        
+    }
+
+    .header__nav{
+        gap: 2rem;
+    }
+
+    .usuario{
+    font-size: 15px;
+}
+
+.acceder__imagen{
+    width: 60px;
+    height: 60px;
+}
+    
+.imagen__presentacion{
+    height: 300px;
+  
+    
+    
+    
+}
+.presentacion{
+    width: 100%;
+    padding-top: 120px;
+}
+
+.seccion__contacto{
+    display: grid;
+    justify-content: center;
+    font-size: 15px;
+    width: auto;
+    
+}
+    
+.contacto{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-content: center;
+}
+
+
+
+
+.whatsapp__icono{
+    
+    margin-left: 200px;
+}
+
+.titulo__whatsapp{
+    margin-right: 110px;
+    
+}
+
+.seccion2{
+    height: 800px;
+}
+.seccion__gamer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+.gamer__img{
+width: 250px;
+height: 250px;
+
+
+}
+
+.seccion__whatsapp{
+    width: 100%;
+    display: block;
+    justify-items: center;
+
+}
+.titulo__gamer{
+    
+}
+
+.main{
+    height: 3000px;
+}
+
+.destacados{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+}
+
+.seccion__destacado{
+    width: 350px;
+}
+
+
+
+.footer__informacion{
+    width: 700px;
+}
+}
+
+/*.......version mobile..... */
+@media screen and (max-width:599px) {
+    .header__logo{
+        
+        
+        
+    }
+
+    .header__menu{
+        
+        display: none;
+        
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100px;
+        
+    }
+
+    
+
+
+
+.seccion__contacto{
+    display: none;
+    
+}
+    
+
+.seccion2{
+    height: 800px;
+}
+
+.gamer__img{
+width: 120px;
+height: 200px;
+margin-top: 100px;
+
+}
+.titulo__gamer{
+    font-size: 15px;
+    text-align: center;
+}
+
+.main{
+    height: 3700px;
+    width: 100%;
+}
+
+.destacados{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr);
+    
+}
+
+.seccion__destacado{
+    width: 300px;
+    
+    
+}
+
+
+
+.footer__informacion{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 300px;
+    gap: 10px;
+}
+    
+.footer__final{
+    padding-top: 30px;
+    display: grid;
+    height: 500px;
+    align-items: flex-start;
+    
+}
+
+.footer__oferta{
+    height: 120px;
+    display: grid;
+    justify-items: center;
+}
+
+.imagen__presentacion{
+    height: 250px;
+    width: 100%;
+}
+}
+
+/* version tablet pagina productos */
+@media screen and (max-width:1023px){
+    
+    .productos__asus{
+        grid-template-areas: 
+        "img1 img2"
+        "img3 img4"
+        "img5 img6";
+        grid-template-rows: 1fr 1fr 1fr;
+        
+    }
+    .productos__asus1{
+        width: 70%;
+    }
+    .productos__asus4{
+        width: 70%;
+    }
+    .productos__main{
+        background-color: black;
+    }
+
+}
+
+/* version mobile pagina de productos */
+@media screen and (max-width:599px) {
+    .productos__asus{
+        grid-template-areas:
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,300px);
+        height: auto;
+    }
+
+    .productos__asus2{
+        width:600px;
+    }
+
+    .productos__asus3{
+        width: 600px;
+    }
+
+    .productos__asus5{
+        width: 600px;
+    }
+    .productos__asus6{
+        width: 600px;
+    }
+}
